@@ -24,4 +24,9 @@ function interval (){
 const change = function(){
     setInterval(interval,1000);
    }
+   const removeChange=function(){
+
+   }
+button2.addEventListener("click",interval);  
 button2.addEventListener("click",change);
+
