@@ -17,6 +17,7 @@ button1.addEventListener('click',function(){
 function interval (){
     document.querySelectorAll('#square>div').forEach(el => {
     el.style.backgroundColor = '#'+Math.random().toString(10).slice(2,8);
+    button2.hidden=true;
    });
 }
 
