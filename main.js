@@ -7,12 +7,11 @@ const createSquares = function(){
       document.querySelectorAll('#square>div').forEach(el => {
       el.style.backgroundColor = '#'+Math.random().toString(10).slice(2,8);
      });
+     button1.hidden=true;
+
 }
 
 button1.addEventListener('click',createSquares);
-button1.addEventListener('click',function(){
-   button1.innerText = "Create one more";
-});
 
 function interval (){
     document.querySelectorAll('#square>div').forEach(el => {
@@ -22,11 +21,10 @@ function interval (){
 }
 
 const change = function(){
-    setInterval(interval,1000);
-   }
-   const removeChange=function(){
-
-   }
+  if(button1.hidden){
+  setInterval(interval,1000);
+}
+    }
 button2.addEventListener("click",interval);  
 button2.addEventListener("click",change);
 
